@@ -1,0 +1,84 @@
+:root {
+  --primary: #084c61;
+  --border: #ee2e31;
+  --hard-blue: #273c75;
+  --dark-overlay: rgba(22, 21, 21, 0.178);
+  --light-white: rgba(255, 255, 255, 0.527);
+  --text: #2f3640;
+  --light-text: #f8f9fa;
+  --facebook-blue: #4267b2;
+  --twitter-blue: #1da1f2;
+}
+body {
+  height: 100vh;
+  /* --soft-blue: #00a8ff; */
+  /* --primary: #05668d; */
+  font-family: "lato", "Roboto", "monsterat";
+}
+
+/* -----------------Header------------------------- */
+
+header {
+  padding: 12px;
+  background-color: var(--primary);
+  min-width: 100%;
+}
+.dropdown-menu {
+  z-index: 1;
+}
+a {
+  color: rgb(206, 206, 206);
+}
+.navbar-brand {
+  font-family: "Satisfy", cursive;
+  font-size: 38px;
+}
+
+
+a:hover {
+  color: #ffffff;
+}
+
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 50px;
+  color: var(--light-text);
+  background: var(--primary);
+  font-family: "lato", sans-serif;
+}
+footer p {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: var(--primary);
+  padding: 0 60px !important;
+  width: 100% !important;
+  transition: all linear 0.5s;
+}
+.sticky .navbar-brand {
+  font-size: 30px;
+}
+
+.show > .dropdown-menu {
+  max-height: 900px;
+  visibility: visible;
+}
+  
+.dropdown-menu {
+  display: block;
+  max-height: 0;
+  visibility: hidden;
+  transition: all 0.35s ease-in-out;
+  overflow: hidden;
+}
+
+
